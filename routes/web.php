@@ -17,7 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('hello',function(){
-    return view('hello');
-    return view('ping');
-});
+Route::get('hello', 'App\Http\Controllers\HelloController@index'); //ambil path dari hellocontroller
