@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HelloController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('hello', 'App\Http\Controllers\HelloController@index'); //ambil path dari hellocontroller
+// Route::get('hello', 'App\Http\Controllers\HelloController@index'); //ambil path dari hellocontroller
+Route::get('hello', [HelloController::class,'index']); //http://127.0.0.1:8000/hello - ambil path dari hellocontroller
+Route::get('world', [HelloController::class,'world_message']); // http://127.0.0.1:8000/world

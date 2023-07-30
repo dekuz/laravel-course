@@ -11,4 +11,8 @@ class HelloController extends Controller
     {
         echo "hello";
     }
+
+    function world_message(){
+        echo "world";
+    }
 }
