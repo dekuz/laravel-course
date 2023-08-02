@@ -14,7 +14,12 @@ class PostController extends Controller
     public function index()
     {
         $view_data = [
-            'posts' => ['Satu','Dua','Tiga']            
+            // 'posts' => ['Satu','Dua','Tiga']            
+            'posts' => [
+                //Title             Content
+                ["Mengenal Laravel","Ini adalah blog tentang pengenalan Laravel"],
+                ["Tentang Codex", "Ini tentang codex"]
+            ]            
         ];
         return view('posts.index', $view_data);
     }
