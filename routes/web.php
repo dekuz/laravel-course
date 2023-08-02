@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HelloController;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,5 +20,9 @@ Route::get('/', function () {
 });
 
 // Route::get('hello', 'App\Http\Controllers\HelloController@index'); //ambil path dari hellocontroller
-Route::get('hello', [HelloController::class,'index']); //http://127.0.0.1:8000/hello - ambil path dari hellocontroller
-Route::get('world', [HelloController::class,'world_message']); // http://127.0.0.1:8000/world
+// Route::get('hello', [HelloController::class,'index']); //http://127.0.0.1:8000/hello - ambil path dari hellocontroller
+// Route::post('hello', [HelloController::class,'create']); //http://127.0.0.1:8000/hello - ambil path dari hellocontroller
+// Route::get('world', [HelloController::class,'world_message']); // http://127.0.0.1:8000/world
+
+
+Route::resource('posts',PostController::class);
