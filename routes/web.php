@@ -19,10 +19,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+
+
 // Route::get('hello', 'App\Http\Controllers\HelloController@index'); //ambil path dari hellocontroller
 // Route::get('hello', [HelloController::class,'index']); //http://127.0.0.1:8000/hello - ambil path dari hellocontroller
 // Route::post('hello', [HelloController::class,'create']); //http://127.0.0.1:8000/hello - ambil path dari hellocontroller
 // Route::get('world', [HelloController::class,'world_message']); // http://127.0.0.1:8000/world
 
+Route::get('posts',[PostController::class, 'index']);
 
-Route::resource('posts',PostController::class);
+// Route::resource('posts',PostController::class);
+
+
