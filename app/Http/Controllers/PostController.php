@@ -45,7 +45,7 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        //
+        echo "Halaman detail dari Post. ID:$id";   //http://127.0.0.1:8000/posts/1
     }
 
     /**
