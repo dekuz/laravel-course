@@ -7,6 +7,9 @@
 </head>
 <body>
     <h1>Blog</h1>
-    {{$posts}}
+    
+    @foreach($posts as $post)
+        {{$post}}<br/>
+    @endforeach
 </body>
 </html>

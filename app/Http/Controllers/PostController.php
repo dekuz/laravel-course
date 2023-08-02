@@ -14,7 +14,7 @@ class PostController extends Controller
     public function index()
     {
         $view_data = [
-            'posts' => "Ini postingan"            
+            'posts' => ['Satu','Dua','Tiga']            
         ];
         return view('posts.index', $view_data);
     }
