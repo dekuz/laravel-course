@@ -20,9 +20,9 @@
 </head>
 
 <body>
-    <h1>Blog</h1>
 
-    <div>
+    <div class="container">
+        <h1>Blog</h1>
         @php($number = 1)
         @foreach($posts as $post)
         <div class="blog">
